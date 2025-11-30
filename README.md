@@ -24,7 +24,7 @@ El servidor correra en `http://localhost:3000`
 # Endpoints y Autenticación
 
 # Registro de Usuario
-
+```
 POST /auth/register
 Content-Type: application/json
 
@@ -34,7 +34,7 @@ Content-Type: application/json
   "name": "Nombre Usuario",
   "role": "user"
 }
-
+```
 
 # Login
 
