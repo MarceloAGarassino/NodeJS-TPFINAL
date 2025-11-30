@@ -37,7 +37,7 @@ Content-Type: application/json
 ```
 
 # Login
-
+```
 POST /auth/login
 Content-Type: application/json
 
@@ -56,7 +56,7 @@ Content-Type: application/json
     "token": "brJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
   }
 }
-
+```
 
 # Productos
 
@@ -71,7 +71,7 @@ GET /api/products/id
 
 
 # Crear Producto (Requiere autenticación)
-
+```
 POST /api/products/create
 Authorization: Bearer <token>
 Content-Type: application/json
@@ -81,13 +81,13 @@ Content-Type: application/json
   "precio": 9000,
   "id": 10
 }
-
+```
 
 # Eliminar Producto (Requiere autenticación)
-
+```
 DELETE /api/products/id
 Authorization: Bearer <token>
-
+```
 el id sera el campo id y no el hash de identificacion del documento (Ej: 3bQqkH65TIVwZk5I30fh)
 
 
@@ -104,12 +104,12 @@ El token es valido por 1 hora.
 
 # Usuario de Prueba
 
-
+```
 {
   "email": "test@gmail.com",
   "password": "123456"
 }
-
+```
 
 # Rutas Protegidas
 
@@ -123,22 +123,22 @@ Se utiliza Firebase Firestore
 
 
 # CodeStates
-
+```
 - `200` - OK
 - `201` - Creado
 - `401` - No autorizado
 - `403` - Token inválido
 - `404` - No encontrado
 - `500` - Error del servidor
-
+```
 # Formato de Respuestas
 
-
+```
 {
   "status": "Exitoso | Error",
   "message": "Mensaje descriptivo",
   "data": { ... }
 }
-
+```
 
 
