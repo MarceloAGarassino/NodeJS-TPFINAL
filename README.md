@@ -88,6 +88,8 @@ Content-Type: application/json
 DELETE /api/products/id
 Authorization: Bearer <token>
 
+el id sera el campo id y no el hash de identificacion del documento (Ej: 3bQqkH65TIVwZk5I30fh)
+
 
 # Autenticación
 
