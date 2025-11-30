@@ -42,8 +42,8 @@ POST /auth/login
 Content-Type: application/json
 
 {
-  "email": "usuario@example.com",
-  "password": "contraseña"
+  "email": "test@gmail.com",
+  "password": "123456"
 }
 
 
